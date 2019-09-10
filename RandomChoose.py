@@ -4,9 +4,13 @@ KREWES = {
 	'rex': ['William', 'Joseph', 'Calvin', 'Ethan', 'Moody', 'Mo', 'Big Mo', 'Peihua', 'Saad', 'Benjamin', 'Justin', 'Alice', 'Hilary', 'Ayham', 'Michael', 'Matthew', 'Jionghao', 'Devin ', 'David', 'Jacob', 'Will', 'Hannah', 'Alex'],
 	'endymion': ['Grace', 'Nahi', 'Derek', 'Jun Tao', 'Connor', 'Jason', 'Tammy', 'Albert', 'Kazi', 'Derek', 'Brandon', 'Kenneth', 'Lauren', 'Biraj', 'Jeff', 'Jackson', 'Taejoon', 'Kevin', 'Jude', 'Sophie', 'Henry', 'Coby', 'Manfred', 'Leia', 'Ahmed', 'Winston']
 }
-def choseRandom(myCrews):
-  totalData = []
-  for period in myCrews.values():
-    totalData += period
-  print(random.choice(totalData))
-choseRandom(KREWES)
+
+
+def choose_random(my_crews):
+    data = []
+    for period in my_crews.values():
+        data += period
+    print(random.choice(data))
+
+
+choose_random(KREWES)
