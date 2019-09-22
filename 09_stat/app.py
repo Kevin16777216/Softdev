@@ -1,3 +1,9 @@
+#Derek Leung
+#Softdev pd 9
+#K#9 -- 'Tis not a race -- but you will go faster
+#2019 09 19
+
+
 from flask import Flask, render_template
 app = Flask(__name__)
 
