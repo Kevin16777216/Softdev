@@ -19,20 +19,27 @@ c = db.cursor()               #facilitate db ops
 # < < < INSERT YOUR POPULATE-THE-DB CODE HERE > > >
 with open(STUDENT_FILE, newline='') as csvfile:
      reader = csv.DictReader(csvfile)
-     test = "CREATE TABLE students (code TEXT,mark INTEGER, id INTEGER PRIMARY KEY);"
+     test = "CREATE TABLE students (name TEXT,age INTEGER, id INTEGER);"
      c.execute(test)
      for row in reader:
-         test = "INSERT INTO students VALUES "+row['id']
-         print(test)
+         #test = "INSERT INTO students VALUES (?, ?, ?)"
+         #+ str(row["name"])+"," + str(row["age"]) + "," + str(row["id"],) + ");"
+         c.execute("INSERT INTO students VALUES (?, ?, ?)", (row["name"], row["age"], row["id"]))
 
 c.execute("SELECT * FROM students;")
+
 with open(COURSE_FILE, newline='') as csvfile:
       reader = csv.DictReader(csvfile)
-      headers = next(reader)
-      print(headers)
+      #headers = next(reader)
+      #print(headers)
+      test = "CREATE TABLE courses (code TEXT,mark INTEGER, id INTEGER);"
+      c.execute(test)
       for row in reader:
-        print(row)
-c.execute(command)
+          #test = "INSERT INTO courses VALUES ("+ str(row["code"], ) + str(row["mark"], ) + str(row["id"],) + ");"
+          c.execute("INSERT INTO courses VALUES (?, ?, ?)", (row["code"], row["mark"], row["id"]))
+        #print(row)
+c.execute("SELECT * FROM courses;")
+#c.execute(command)
 
 #==========================================================
 
