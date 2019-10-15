@@ -1,7 +1,7 @@
-#Clyde "Thluffy" Sinclair
-#SoftDev
-#skeleton :: SQLITE3 BASICS
-#Oct 2019
+# Team Bacon - Kevin Cai and Lauren Pehlivanian
+# SoftDev1 pd9
+# K18 -Average
+# Oct 2019
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O
