@@ -1,7 +1,7 @@
-# Kevin Cai
+# Team steamWorks Kevin Cai and Winston Peng
 # SoftDev1 pd9
-# K25 -- A RESTful
-# 2019-11-12
+# K25 -- restrio
+# 2019-11-13
 from flask import Flask, render_template
 import urllib.request
 import json
