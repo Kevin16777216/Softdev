@@ -11,7 +11,7 @@ var changeHeading = function(e) {
 };
 
 var removeItem = function(e) {
-    // accesses the element with given ID and removes the child at that reference of the object
+    // get list then remove target child
     document.getElementById('thelist').removeChild(e['target'])
 };
 
