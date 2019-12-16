@@ -1,6 +1,6 @@
 // By Kevin Cai and Henry Liu <team halfApress>
 // SoftDev1 pd9
-// K29 -- jsdom
+// K29 -- Sequential Progression III: Season of the Witch
 // 2019-12-11
 
 var baseHeader = document.getElementById("h").innerHTML;
@@ -41,7 +41,7 @@ var addItem = function(e) {
     list.appendChild( item );
 };
 
-// every time button with id 'b' is pressed, add new item
+// button to add item to first list
 var button = document.getElementById("b");
 button.addEventListener('click', addItem);
 
